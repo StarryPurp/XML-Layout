@@ -5,52 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="bstar128.example.hansung.xmllayout.MainActivity">
+    tools:context="bstar128.example.hansung.xmllayout.MainActivity"
+    android:background="#9c93ea"
+    android:weightSum="1"
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:textSize="30sp"
         android:text="단순 계산기"/>
     <EditText
         android:id="@+id/edit_1"
-        android:layout_width="50dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="정수값으로 입력"/>
+        android:gravity="center"
+        android:hint="정수값으로 입력"
+        android:layout_weight="0.15" />
     <EditText
         android:id="@+id/edit_2"
-        android:layout_width="50dp"
+        android:layout_width="433dp"
         android:layout_height="wrap_content"
-        android:hint="정수값으로 입력"/>
+        android:gravity="center"
+        android:hint="정수값으로 입력"
+        android:layout_weight="0.13" />
 <Button
     android:id="@+id/but_plus"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#96fff694"
+    android:gravity="center"
     android:text="+"
+    android:layout_marginBottom="15dp"
     />
     <Button
         android:id="@+id/but_minus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#96fff694"
+        android:gravity="center"
         android:text="-"
+        android:layout_marginBottom="15dp"
         />
+
     <Button
         android:id="@+id/but_times"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#96fff694"
+        android:gravity="center"
         android:text="×"
-        />
+        android:layout_marginBottom="15dp"/>
+
     <Button
         android:id="@+id/but_division"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#96fff694"
+        android:gravity="center"
         android:text="÷"
-        />
+        android:layout_marginBottom="15dp"/>
+
     <TextView
         android:id="@+id/text_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:textColor="#612ad6"/>
+        android:gravity="center"
+        android:textColor="#612ad6"
+        android:textSize="30sp" />
 </LinearLayout>
